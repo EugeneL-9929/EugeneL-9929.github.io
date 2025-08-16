@@ -3,4 +3,13 @@
     left: -1000px;
 }
 
+.offpage:focus{
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    background-color: #fff;
+}
+
 
