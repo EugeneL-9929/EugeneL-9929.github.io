@@ -12,4 +12,8 @@
     background-color: #fff;
 }
 
+h1:focus{
+    background-color: #db1414;
+}
+
 
