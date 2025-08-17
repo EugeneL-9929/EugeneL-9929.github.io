@@ -16,4 +16,12 @@ h1:focus{
     background-color: #db1414;
 }
 
+.granule_deci img{
+    height: 100px;
+}
+
+#main_content_granule > div{
+    display: grid;
+    grid-template-columns: 40% 40%;
+}
 
