@@ -12,6 +12,10 @@
     background-color: #fff;
 }
 
+body{
+    font-size: 150%;
+}
+
 h1:focus{
     background-color: #db1414;
 }
@@ -24,10 +28,41 @@ h1:focus{
     height: 100px;
 }
 
+div.granule_deci{
+    padding: 20px;
+}
+
+div.granule_deci:nth-of-type(1),
+div.granule_deci:nth-of-type(2),
+div.granule_deci:nth-of-type(10){
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 5px;
+}
+
+div.granule_deci:nth-of-type(3),
+div.granule_deci:nth-of-type(4),
+div.granule_deci:nth-of-type(9){
+    border-style: dotted;
+    border-radius: 300px;
+    border-width: 5px;
+}
+
+div.granule_deci:nth-of-type(5),
+div.granule_deci:nth-of-type(6),
+div.granule_deci:nth-of-type(7),
+div.granule_deci:nth-of-type(8){
+    border-style: none;
+    border-radius: 30px;
+    border-width: 0px;
+    background-color: rgba(238, 238, 238, 255);
+}
+
 #main_content_granule > div{
     display: grid;
     grid-template-columns: 40% 40%;
     justify-content: space-around;
+    row-gap: 20px;
 }
 
 h1{
@@ -38,4 +73,23 @@ h1{
     margin: 10px;
     padding: 30px;
     border-radius: 25px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    text-decoration: none;
+    border-style: solid;
+}
+
+footer{
+    display: inline;
+    margin-top: 30px;
+    font-size: 80%;
+    padding: 50px;
+    border-style: none;
+    background-color: #11caca;
+    opacity: 38%;
 }
