@@ -138,3 +138,9 @@ h2{
 .flex_content img{
     height: 100px;
 }
+
+.flex_content img:hover{
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 5px;
+}
