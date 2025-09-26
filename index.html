@@ -2,42 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Eugene's Personal Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eugene's Homepage </title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="js/interactive.js"></script>
 </head>
 
 <body>
-    <a class="offpage" href="#main_content">skip to main content</a>
+    <a class="offpage" href="#mainContent">skip to main content</a>
     <header>
         <nav>
             <ul>
-                <li> <a class="current" href="index.html"> About Me </a> </li>
-                <li> <a href="decimalish.html"> Decimalish Granule </a> </li>
-                <li> <a href="decimalish_composition.html"> Decimalish examples </a> </li>
-            </ul>
-        </nav>
-        <nav class="sub_nav">
-            <ul>
+                <li> <a class="current" href="index.html"> About </a> </li>
                 <li>
-
+                    <a href="cv.html"> CV </a>
+                    <ul>
+                        <li> <a href="cven.html"> English Version </a> </li>
+                        <li> <a href="cvzh.html"> 中文版本 </a> </li>
+                    </ul>
                 </li>
+                <li> <a href="academics.html"> Academics </a> </li>
+                <li> <a href="motivated.html"> Self-Motivated </a> </li>
+                <li> <a href="gallery.html"> Gallery </a> </li>
             </ul>
         </nav>
-        <h1>
-            <script>document.write(document.title)</script>
-        </h1>
     </header>
+    <main id="mainContent">
+        <div id="personal">
+            <img src="image/index/ssw.png" alt="my exclusive decimalish" width="100">
+            <ul class="outerLinks">
+                <li> <a> <i class="fas fa-map"> Hong Kong </i> </a> </li>
+                <li> <a href="mailto:eugenel.9929@gmail.com"> <i class="fas fa-envelope"> Email </i> </a> </li>
+                <li> <a href="https://github.com/EugeneL-9929/"> <i class="fab fa-github"> Github </i> </a> </li>
+                <li> <a href="https://www.linkedin.com/in/yujun-eugene-liu-07901423a"> <i class="fab fa-linkedin"> Linkedin </i> </a> </li>
+                <li> <a href="https://scholar.google.com/citations?user=otObmB4AAAAJ&hl"> <i class="fas fa-graduation-cap"> Google Scholar </i> </a> </li>
+            </ul>
+        </div>
 
-    <main id="main_content">
-
-        <p>Hello, Everyone! This is Eugene Liu. I will keep sharing interesting things in this website.
-            I will add my self-introdution here later.</p>
+        <div id="aboutMe">
+            <h1>About Me</h1>
+            <p>
+                Hello! I am Yujun Liu. I graduated from Hong Kong University
+                of Science and Technology with a PhD degree in Physics in
+                July, 2025. During my postgraduate study, my research
+                involved modeling open quantum systems using linear algebra
+                and statistical mechinics to analyze static properties, and
+                formulating high-order differential equations to predict
+                dynamic evolution. To validate the models, I gained
+                extensive experimental expertise on operating a complex
+                ultracold atoms apparatus, integrating mechanical,
+                electronic, and optical systems. My PhD study ended up with
+                a study of many-body effects within an open quantum
+                framework.
+            </p>
+            <p>
+                Before that, I earned my Bachelor's degree in Optoelectronic
+                Information Science and Technology from South China Normal
+                University, Guangzhou in 2021. My undergraduate studies
+                provided a strong foundation in information theory and
+                optoelectronic signal processing. Besides, I conducted
+                research on novel auto-focusing optical beams, exploring
+                their potential applications in optical tweezers.
+            </p>
+            <p>
+                To explore how to extend my numerical analysis skills, I am
+                actively pursuing knowledge in financial risk managements.
+                It is worth mentioning that I have passed GARP FRM Part I
+                exam in May, 2025. More recently, I develop a strong
+                interest in Natural Language Processing models. I am
+                independently explore how to adapt some pretrained NLP
+                models through fine-tuning for specific tasks, such as
+                analyzing and translating market news...
+            </p>
+        </div>
     </main>
-
     <footer>
-        This page is originally created by Dr. Eugene Liu.
+        This page is originally created Eugene Liu.
     </footer>
 </body>
 

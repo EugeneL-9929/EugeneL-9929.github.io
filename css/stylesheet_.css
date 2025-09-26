@@ -1,0 +1,146 @@
+.offpage{
+    position: absolute;
+    left: -1000px;
+}
+
+.offpage:focus{
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    background-color: #fff;
+}
+
+body{
+    font-size: 150%;
+}
+
+h1:focus{
+    background-color: #db1414;
+}
+
+.granule_deci{
+    text-align: center;
+}
+
+.granule_deci img{
+    height: 100px;
+}
+
+div.granule_deci{
+    padding: 20px;
+}
+
+div.granule_deci:nth-of-type(1),
+div.granule_deci:nth-of-type(2),
+div.granule_deci:nth-of-type(10){
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 5px;
+}
+
+div.granule_deci:nth-of-type(3),
+div.granule_deci:nth-of-type(4),
+div.granule_deci:nth-of-type(9){
+    border-style: dotted;
+    border-radius: 300px;
+    border-width: 5px;
+}
+
+div.granule_deci:nth-of-type(5),
+div.granule_deci:nth-of-type(6),
+div.granule_deci:nth-of-type(7),
+div.granule_deci:nth-of-type(8){
+    border-style: none;
+    border-radius: 30px;
+    border-width: 0px;
+    background-color: rgba(238, 238, 238, 255);
+}
+
+#main_content_granule > div{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    text-decoration: none;
+    border-style: solid;
+    font-size: 30px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+nav li a:active{
+    border-radius: 100px;
+}
+
+
+footer{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 68%;
+    padding: 8px;
+    border-style: none;
+    background-color: #11caca;
+    opacity: 38%;
+}
+
+.flex_content{
+    display: flex;
+}
+
+ul{
+    padding: 50px;
+    background-image: url('../image/header_img.png');
+    background-size: 10%;
+}
+
+.current{
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+h2{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex_content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex_content div{
+    text-align: center;
+
+}
+
+.flex_content img{
+    height: 100px;
+}
+
+.flex_content img:hover{
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 5px;
+}
