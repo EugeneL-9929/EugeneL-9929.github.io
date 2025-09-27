@@ -8,36 +8,46 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="text/javascript" src="js/interactive.js"></script>
+    <script type="text/javascript" src="js/folding.js"></script>
 </head>
 
 <body>
     <a class="offpage" href="#mainContent">skip to main content</a>
     <header>
-        <nav>
-            <ul>
-                <li> <a class="current" href="index.html"> About </a> </li>
-                <li>
-                    <a href="cv.html"> CV </a>
-                    <ul>
-                        <li> <a href="cven.html"> English Version </a> </li>
-                        <li> <a href="cvzh.html"> 中文版本 </a> </li>
+        <nav role="navigation">
+            <div class="logo">My Portfolio</div>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul id="navBar">
+                <li> <a class="current" href="index.html">About</a> </li>
+                <li class="has-submenu">
+                    <a href="#">CV</a>
+                    <ul class="submenu">
+                        <li><a href="cven.html">English Version</a></li>
+                        <li><a href="cvzh.html">中文版本</a></li>
                     </ul>
                 </li>
-                <li> <a href="academics.html"> Academics </a> </li>
-                <li> <a href="motivated.html"> Self-Motivated </a> </li>
-                <li> <a href="gallery.html"> Gallery </a> </li>
+                <li> <a href="academics.html">Academics</a> </li>
+                <li> <a href="motivated.html">Self-Motivated</a> </li>
+                <li> <a href="gallery.html">Gallery</a> </li>
             </ul>
         </nav>
     </header>
+
     <main id="mainContent">
         <div id="personal">
             <img src="image/index/ssw.png" alt="my exclusive decimalish" width="100">
             <ul class="outerLinks">
-                <li> <a> <i class="fas fa-map"> Hong Kong </i> </a> </li>
+                <li> <a href="https://maps.google.com/?q=Hong+Kong"> <i class="fas fa-map"> Hong Kong </i> </a> </li>
                 <li> <a href="mailto:eugenel.9929@gmail.com"> <i class="fas fa-envelope"> Email </i> </a> </li>
                 <li> <a href="https://github.com/EugeneL-9929/"> <i class="fab fa-github"> Github </i> </a> </li>
-                <li> <a href="https://www.linkedin.com/in/yujun-eugene-liu-07901423a"> <i class="fab fa-linkedin"> Linkedin </i> </a> </li>
-                <li> <a href="https://scholar.google.com/citations?user=otObmB4AAAAJ&hl"> <i class="fas fa-graduation-cap"> Google Scholar </i> </a> </li>
+                <li> <a href="https://www.linkedin.com/in/yujun-eugene-liu-07901423a"> <i class="fab fa-linkedin">
+                            Linkedin </i> </a> </li>
+                <li> <a href="https://scholar.google.com/citations?user=otObmB4AAAAJ&hl"> <i
+                            class="fas fa-graduation-cap"> Google Scholar </i> </a> </li>
             </ul>
         </div>
 

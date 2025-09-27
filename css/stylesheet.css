@@ -1,13 +1,274 @@
-.offpage{
+.offpage {
     position: absolute;
     left: -1000px;
 }
 
-.offpage:focus{
+.offpage:focus {
     position: static;
     width: auto;
     height: auto;
     overflow: visible;
     clip: auto;
     background-color: #fff;
+}
+
+header {
+    position: fixed;
+}
+
+main {
+    padding-top: 100px;
+}
+
+#personal {
+    display: flex;
+    position: inherit;
+}
+
+
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    border-style: solid;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px;
+    /* 为固定导航栏留出空间 */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../image/header_img.png');
+    background-size: 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+
+.nav-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+#navBar {
+    display: flex;
+    list-style: none;
+}
+
+#navBar li {
+    position: relative;
+}
+
+#navBar>li>a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+    border-radius: 4px;
+}
+
+#navBar>li>a:hover,
+#navBar>li>a.current {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+#navBar li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.3s;
+}
+
+.submenu a:last-child {
+    border-bottom: none;
+}
+
+.submenu a:hover {
+    background: #f5f7fa;
+    color: #3498db;
+}
+
+#navBar li.has-submenu>a::after {
+    content: "▼";
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    nav {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    #navBar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        flex-direction: column;
+        display: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #navBar.active {
+        display: flex;
+    }
+
+    #navBar li {
+        width: 100%;
+    }
+
+    #navBar>li>a {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .submenu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    #navBar li.active .submenu {
+        display: block;
+    }
+
+    .submenu a {
+        padding-left: 40px;
+        color: rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    #navBar li.has-submenu>a::after {
+        content: "►";
+        float: right;
+    }
+
+    #navBar li.active.has-submenu>a::after {
+        content: "▼";
+    }
 }
