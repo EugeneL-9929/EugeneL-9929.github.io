@@ -80,10 +80,6 @@ header {
     z-index: 1000;
 }
 
-.icon-bar{
-    background-color: #000;
-}
-
 #personal img{
     padding: 10px;
     border-radius: 30%;
