@@ -2,42 +2,352 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Eugene's Personal Webpage</title>
-    <link rel="stylesheet" href="css/stylesheet_.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yujun LIU - Resume</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="js/interactive.js"></script>
+    <script type="text/javascript" src="js/folding.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .contact-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .contact-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .resume-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .resume-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .resume-table td:first-child {
+            font-weight: bold;
+            width: 25%;
+        }
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .publication {
+            font-style: italic;
+        }
+
+        .extracurricular-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .extracurricular-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .extracurricular-table td:nth-child(2) {
+            width: 15%;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-    <a class="offpage" href="#main_content">skip to main content</a>
     <header>
-        <nav>
-            <ul>
-                <li> <a class="current" href="index_.html"> About Me </a> </li>
-                <li> <a href="decimalish.html"> Decimalish Granule </a> </li>
-                <li> <a href="decimalish_composition.html"> Decimalish examples </a> </li>
-            </ul>
-        </nav>
-        <nav class="sub_nav">
-            <ul>
-                <li>
-
+        <nav role="navigation">
+            <div class="logo">My Portfolio</div>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul id="navBar">
+                <li> <a href="index.html">About</a> </li>
+                <li class="has-submenu">
+                    <a class="current" href="#">CV</a>
+                    <ul class="submenu">
+                        <li><a href="cven.html">English Version</a></li>
+                        <li><a href="cvzh.html">中文版本</a></li>
+                    </ul>
                 </li>
+                <li> <a href="academics.html">Academics</a> </li>
+                <li> <a href="motivated.html">Self-Motivated</a> </li>
+                <li> <a href="gallery.html">Gallery</a> </li>
             </ul>
         </nav>
-        <h1>
-            <script>document.write(document.title)</script>
-        </h1>
     </header>
+    <div class="header">
+        <h1>Yujun (Eugene) LIU</h1>
+    </div>
 
-    <main id="main_content">
+    <!-- Contact Information Table -->
+    <table class="contact-table">
+        <tr>
+            <td><a href="https://maps.google.com/?q=Hong+Kong"> <i class="fas fa-map"> Hong Kong </i> </a></td>
+            <td><a href="#"><i class="fas fa-phone">(852) 6571-4676</i></a></td>
+            <td><a href="mailto:eugenel.9929@gmail.com"> <i class="fas fa-envelope"> Email </i> </a></td>
+            <td><a href="https://github.com/EugeneL-9929/"> <i class="fab fa-github"> Github </i> </a></td>
+            <td><a href="https://www.linkedin.com/in/yujun-eugene-liu-07901423a"> <i class="fab fa-linkedin">
+                            Linkedin </i> </a></td>
+        </tr>
+    </table>
 
-        <p>Hello, Everyone! This is Eugene Liu. I will keep sharing interesting things in this website.
-            I will add my self-introdution here later.</p>
-    </main>
+    <!-- Education Section -->
+    <div class="section">
+        <h2>Education</h2>
+        <!-- HKUST PhD Entry -->
+        <table class="resume-table">
+            <tr>
+                <td>Institution</td>
+                <td>Hong Kong University of Science and Technology (HKSAR)</td>
+            </tr>
+            <tr>
+                <td>Degree</td>
+                <td>Ph.D. in Physics</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td>Aug. 2021 - Jul. 2025</td>
+            </tr>
+            <tr>
+                <td>Details</td>
+                <td>
+                    <ul>
+                        <li>GPA: 4.2/4.3</li>
+                        <li>Key Courses: Quantum Many-Body Theory, Electromagnetic waves & Maxwell equations &
+                            Relativity, Modern Atomic Molecular Optical Physics</li>
+                        <li>Thesis: Non-Hermitian Spin-Orbit-Coupled Fermions and Beyond (Supervisor: Prof. JO,
+                            Gyu-Boong)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <!-- SCNU Bachelor Entry -->
+        <table class="resume-table">
+            <tr>
+                <td>Institution</td>
+                <td>South China Normal University (Guangzhou, China)</td>
+            </tr>
+            <tr>
+                <td>Degree</td>
+                <td>B. S. in Optoelectronics Information Sci. & Eng.</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td>Sep. 2017 - Jun. 2021</td>
+            </tr>
+            <tr>
+                <td>Details</td>
+                <td>
+                    <ul>
+                        <li>GPA: 4.17/5.0 (Rank 1 in 127)</li>
+                        <li>Key Courses: Linear Algebra, Probability & Statistics, C Programming Language, Numerical
+                            Analysis using MATLAB, Mathematical Methods in Physics, Computer Network Technique, Digital
+                            Circuitry, Signal & System</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Project Experiences Section -->
+    <div class="section">
+        <h2>Project Experiences</h2>
+        <!-- HKUST Project Entry -->
+        <table class="resume-table">
+            <tr>
+                <td>Project Name</td>
+                <td>Modeling non-Hermitian Quantum Systems, HKUST</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td>Jun. 2023 - Jul. 2025</td>
+            </tr>
+            <tr>
+                <td>Responsibilities & Achievements</td>
+                <td>
+                    <ul>
+                        <li><strong>Modeling:</strong> Developed numerical models for open quantized systems using
+                            high-order ordinary differential equations and matrix discretization, solving for dynamics
+                            and eigenvalues with numerical solvers of SciPy/NumPy.</li>
+                        <li><strong>AI for Science:</strong> Accelerated parameters fitting and filtered outlier data
+                            with neural network models in PyTorch.</li>
+                        <li><strong>Data Analysis:</strong> Organized filtered time-series data via Panda/SQL,
+                            recognized key data patterns and validated model.</li>
+                        <li><strong>Process Optimization:</strong> Coordinated operations across multiple platforms
+                            (electronic-driven systems), optimized time-sequence signal synchronization and precision
+                            with microsecond-level resolution.</li>
+                        <li><strong>Published Works:</strong>
+                            <ul class="publication">
+                                <li>Third-order exceptional point in non-Hermitian spin-orbit-coupled cold atoms,
+                                    Physical Review A, 2025 (First Author) [Link]</li>
+                                <li>Two-dimensional non-Hermitian skin effect in an ultracold Fermi gas, Nature, 2025
+                                    (Fifth Author) [Link]</li>
+                                <li>Observing a topological phase transition with deep neural networks from experimental
+                                    images of ultracold atoms, Optics Express, 2022 (Fifth Author) [Link]</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <!-- SCNU Project Entry -->
+        <table class="resume-table">
+            <tr>
+                <td>Project Name</td>
+                <td>Modeling novel auto-focusing optical beams, SCNU</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td>Sep. 2019 - Jun. 2021</td>
+            </tr>
+            <tr>
+                <td>Responsibilities & Achievements</td>
+                <td>
+                    <ul>
+                        <li><strong>Modeling:</strong> Simulated propagation dynamics of novel auto-focusing optical
+                            beams with diffraction integral method. Designed convergent discretized numerical solver to
+                            model propagation dynamics in MATLAB.</li>
+                        <li><strong>Published Works:</strong>
+                            <ul class="publication">
+                                <li>Shaping autofocusing Airy beams through the modification of Fourier spectrum, Optics
+                                    Express, 2022 (First Author) [Link]</li>
+                                <li>Auto-focusing and self-healing of symmetric odd-Pearcey Gauss beams, Optics Letters,
+                                    2020 (First Author) [Link]</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Skills & Languages Section -->
+    <div class="section">
+        <h2>Skills & Languages</h2>
+        <table class="resume-table">
+            <tr>
+                <td>Programming</td>
+                <td>Python, C++, SQL, Verilog, HTML5, CSS, JavaScript, MATLAB</td>
+            </tr>
+            <tr>
+                <td>Tools</td>
+                <td>Microsoft Office, LaTeX, Git, Adobe Illustrator, SolidWorks</td>
+            </tr>
+            <tr>
+                <td>Certificates</td>
+                <td>GARP Financial Risk Management Exam - Part I (Top Quartile 1111)</td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td>Cantonese (Native), Mandarin (Native), English (Fluent), Japanese (Starter)</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Honors Section -->
+    <div class="section">
+        <h2>Honors</h2>
+        <table class="resume-table">
+            <tr>
+                <td>2025</td>
+                <td>Young Scientists Program Scholarship, HKUST (Donor: AntAlpha)</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>HKUST Redbird Academic Award, HKUST</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>Outstanding Undergraduate Thesis, SCNU</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Extracurricular Experience Section -->
+    <div class="section">
+        <h2>Extracurricular Experience</h2>
+        <table class="extracurricular-table">
+            <tr>
+                <td>
+                    <strong>Teaching Assistant Coordinator, Dept. Phys., HKUST</strong>
+                    <ul>
+                        <li><strong>Communication:</strong> Coordinated teaching affairs, serving as liaison between
+                            postgraduate students, department and university administration to ensure smooth
+                            communication and operational efficiency.</li>
+                        <li><strong>Organization:</strong> Organized departmental events (e.g., annual dinners, outdoor
+                            activities) for groups of 30-100 participants, overseeing logistics and scheduling.</li>
+                    </ul>
+                </td>
+                <td>Sep. 2023 - Aug. 2024</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>APS DAMOP Meeting, American Physical Society, US</strong>
+                    <ul>
+                        <li><strong>Oral presenter:</strong> Delivered an oral presentation on “Floquet engineered
+                            non-Hermitian system in spin-orbit-coupled fermions” (55th APS DAMOP 2024).</li>
+                        <li><strong>Poster presenter:</strong> Exhibited a poster on “Observation of a topological phase
+                            transition with deep neural networks in spin-orbit-coupled fermions” (54th APS DAMOP 2023).
+                        </li>
+                    </ul>
+                </td>
+                <td>Jun. 2023 & Jun. 2024</td>
+            </tr>
+        </table>
+    </div>
 
     <footer>
-        This page is originally created by Dr. Eugene Liu.
+        This page is originally created by Eugene Liu.
     </footer>
 </body>
 
